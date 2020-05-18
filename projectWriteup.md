@@ -1,6 +1,6 @@
 # Advanced Lane finder
 In this work using gradient and color thresholding we find the maximum concentration of pixels along the height of the image using a histogram sliding window approach and polynomial fitting.
-Using perspective transform for better curve detection and also estimating the position os the car w.r.t the center of the lane.
+Using perspective transform for better curve detection and also estimating the position of the car w.r.t the center of the lane.
 
 ### Pipeline
  
@@ -99,15 +99,15 @@ While this algorithm worked perfectly for both project video and the challenge v
 
 The gradient detection method worked well for the project video but it provided too many unwanted lines in the challenge video so in the end only the color space threshold was used for both the project and challenge video.
 
-Here are the video results [Project Video](https://github.com/Charan-14/Advanced-Lane-Finder/blob/master/output_videos/project_video_output.avi)
+Here are the video results [Project Video](https://github.com/Charan-14/Adanced-lane-finder/blob/master/output_videos/project_video_output.mp4)
 
-The Challenge Video results [Challenge Video]
+The Challenge Video results [Challenge Video](https://github.com/Charan-14/Adanced-lane-finder/blob/master/output_videos/challenge_video_output.avi)
 
 This video hit me in the face telling that your algorithm still has a lot to work on. It could not take sharp curves and the bery bright rays of the sun. The color and gradient threshold values both needed to be retuned, the perpective vertices need to be changed, and the polynomial outlier values needed to be changed. Also the margin for polynomial search needed to be reduced. All the parameters defining a good fit needed to be changed.
 
 ![Screenshot from 2020-05-17 03-41-57](https://user-images.githubusercontent.com/58968984/82152214-63262680-987d-11ea-8869-3fd68d291904.png)
 
-The Harder Challenge Video results [Harder Challenge Video] 
+The Harder Challenge Video results [Harder Challenge Video](https://github.com/Charan-14/Adanced-lane-finder/blob/master/output_videos/harder_challenge_video_output.mp4) 
 
 ### Improvements
 
@@ -115,7 +115,7 @@ The calculation of radius of curvature needs to be improved. I could use averagi
 
 Right time when slidewindow should be used to aid polynomial search and the right time to use previous best fit value still needs to found for the harder challenge video.
 
-The sharpest curve at the end of the harder challenge video is what broke the algorithm.
+The sharpest curve at the end of the harder challenge video is what broke the algorithm the only solution which comes to mind is using a better perspective transform.
 
 
 
