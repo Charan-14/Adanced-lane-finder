@@ -103,7 +103,7 @@ Here are the video results [Project Video](https://github.com/Charan-14/Adanced-
 
 The Challenge Video results [Challenge Video](https://github.com/Charan-14/Adanced-lane-finder/blob/master/output_videos/challenge_video_output.avi)
 
-This video hit me in the face telling that your algorithm still has a lot to work on. It could not take sharp curves and the bery bright rays of the sun. The color and gradient threshold values both needed to be retuned, the perpective vertices need to be changed, and the polynomial outlier values needed to be changed. Also the margin for polynomial search needed to be reduced. All the parameters defining a good fit needed to be changed.
+This video hit me in the face telling that your algorithm still has a lot to work on. It could not take sharp curves and the very bright rays of the sun. The color and gradient threshold values both needed to be retuned, the perpective vertices need to be changed, and the polynomial outlier values needed to be changed. Also the margin for polynomial search needed to be reduced. All the parameters defining a good fit needed to be changed.
 
 ![Screenshot from 2020-05-17 03-41-57](https://user-images.githubusercontent.com/58968984/82152214-63262680-987d-11ea-8869-3fd68d291904.png)
 
@@ -113,7 +113,7 @@ The Harder Challenge Video results [Harder Challenge Video](https://github.com/C
 
 The calculation of radius of curvature needs to be improved. I could use averaging of the lane pixel values
 
-Right time when slidewindow should be used to aid polynomial search and the right time to use previous best fit value still needs to found for the harder challenge video.
+Right time when sliding window should be used to aid polynomial search and the right time to use previous best fit value still needs to found for the harder challenge video.
 
 The sharpest curve at the end of the harder challenge video is what broke the algorithm the only solution which comes to mind is using a better perspective transform.
 
